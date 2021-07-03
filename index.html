@@ -1,5 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
 
-hola
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmani Viñamagua</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font/flaticon.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
 
+<body>
+    <header>
+        <section class="header_foto">
+            <div></div>
+        </section>
+    </header>
+    <main>
+        <section class="header_nombre">
+            <div class="foto">
+                <img class="redonda" src="assets/img/foto-perfil-2.png" alt="Foto de perfil de Yasmani Viñamagua">
+            </div>
+            <div class="nombre">
+                <h1>Angel Yasmani Viñamagua Cuenca</h1>
+                <h4>Ingeniero en Electrónica y Telecomunicaciones</h4>
+            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/yasmani-vi%C3%B1amagua/" target="_blank"><span class="flaticon-010-linkedin"></span></a>
+                <a href="https://www.instagram.com/chasnami_/" target="_blank"><span class="flaticon-011-instagram"></span></a>
+                <a href="https://www.facebook.com/yasmanivinamagua" target="_blank"><span class="flaticon-001-facebook"></span></a>
+            </div>
+            <div class="tags">
+                <h5>👨🏻‍💻 Programar | Diseñar | Innovar</h5>
+                <h5>🚶🏻‍♂️ Economía | Política | Cocina | Música</h5>
+                <h5>📍 Loja, Ecuador</h5>
+            </div>
+        </section>
+        <section class="information">
+            <div class="description">
+                <div>
+                    <button id="boton"><i class="fas fa-graduation-cap"></i> 
+                        <br>Studies</button>
+                    <div class="contenido">
+                        <p class="about">Actualmente me encuentro estudiando desarrollo web y mobile para posterior, enfocarlo en un proyecto personal que beneficiará a miles de comerciantes ecuatorianos y los dará a conocer en todo el mundo 🌎.<br> Me apasiona innovar,
+                            aprender como funciona algo y volverlo más eficiente, que sea autónomo y en general que facilite la vida a las personas 🙋‍♂️. <br> El descubrir como mejorar algo mediante el uso del internet, software y hardware (IoT) 💻 tiene
+                            el mismo efecto en mi que el café en algunas personas. Puedo trasnochar y seguir con mucha energía pues es algo que en verdad me apasiona.<br> 🎓 Para mis docentes otro dios más 😂 para el resto de personas, Ingeniero en Electrónica
+                            y Telecomunicaciones por la Universidad Técnica Particular de Loja.<br> 👉 La industria 4.0, está a la vuelta de la esquina y es ahí cuando más me alegro de haber estudiado mi ingeniería pues la automatización mediante el uso
+                            de las TICs, IoT, WSN, redes y protocolos de comunicación es una necesidad. Durante mi vida universitaria, trabajé en algunos proyectos con WSN, energía renovable y redes. Finalmente para mi trabajo de titulación, quise mejorar
+                            mi ciudad y desarrolle una propuesta de automatización del Sistema Municipal de Estacionamiento Rotativo Tarifado utilizando LoRaWAN. <br>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button id="boton"><i class="fas fa-heart"></i> 
+                        <br>Passion</button>
+                    <div class="contenido">
+                        <p class="about">👉 Programador de nacimiento, creyente de que el mundo dio un enorme paso hacia la digitalización (e-commerce, cripto-moneda, home office...). Aprendo a desarrollar software ya sean apps, webs o controladores de equipos 👩‍💻.
+                            Manejo c++, flutter, php, python, css, Matlab, java, WordPress, ATMEL Studio, LabVIEW y más, siempre en busca de poder automatizar lo que necesites en tu compañía, empresa o startup. Y deseoso de compartir mis conocimientos.
+                            <br> 👉 Dado que siempre me ha gustado el imaginar y llevar a cabo proyectos, he participado en algunos concurso de innovación siendo finalista en "Imagina Banco del Pacífico" y ganador junto a mi team, en un reto de innovación
+                            de la UTPL. <br> 👉 Diseñador empírico con la capacidad de diseñar una línea gráfica para web, app, e-commerce, e-mail marketing y marca personal. Me pongo en el lugar del público objetivo, satisfaciendo sus necesidades y solucionando
+                            sus problemas.
+                    </div>
+                </div>
+                <div>
+                    <button id="boton"><i class="fas fa-mug-hot"></i></i> 
+                        <br>Hobbies</button>
+                    <div class="contenido">
+                        <p class="about"> 👉 No puedo dejar de lado mis pasatiempos favoritos como la música, cocina, economía y política, aunque eso lo dejo para mi tiempo libre y Twitter ☕️📰 .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <p class="mail">Mail: ayvinamagua@utpl.edu.ec</p>
+                <p class="direction">Direction: Loja, Loja, Ecuador</p>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        let boton = document.getElementById('boton');
+        let contenido = document.querySelector('.contenido');
+        boton.addEventListener('click', () => {
+            if (contenido.style.display === "") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "";
+            }
+        })
+    </script>
+</body>
 
-ZZ
+</html>
