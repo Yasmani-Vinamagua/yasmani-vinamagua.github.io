@@ -4,23 +4,24 @@
         width: 150%;
     }
     main {
-        margin: -65px 10px 0px 20px;
+        margin: -65px 10px 0px 10px;
         height: auto;
         background-color: white;
         border-radius: 15px;
     }
     .botones button {
-        font-size: 15px;
-        padding: 5px 10px;
+        font-size: 17px;
+        padding: 10px 15px;
     }
     .contenido {
         display: none;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: -5%;
     }
     .contenido_botones img {
         float: none;
         display: block;
-        margin: auto;
+        margin: 0 25% 5% 25%;
     }
 }
