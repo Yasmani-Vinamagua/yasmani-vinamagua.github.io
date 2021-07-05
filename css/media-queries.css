@@ -1,0 +1,7 @@
+@media (max-width: 900px) {
+    .contenido_botones img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}

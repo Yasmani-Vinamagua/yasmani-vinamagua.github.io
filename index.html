@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasmani Viñamagua</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/font/flaticon.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/toggle_button.css">
 </head>
 
 <body>
     <header>
-        <section class="header_foto">
-            <div class="dropdown">
-                <button class="dropbtn"><i class="fas fa-share"></i>COMPARTIR</button>
-                <div class="dropdown-content">
+        <section>
+            <div class="container">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="button"><i class="fas fa-share-alt"></i></label>
+                <nav class="nav">
                     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.linkedin.com/in/yasmani-vi%C3%B1amagua/"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/yasmanivinamagua"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://api.whatsapp.com/send?text=Información%20de%20contacto:%20https://yasmani08.github.io/Yasmani-Vinamagua.github.io/"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://twitter.com/intent/tweet?text=Información%20de%20contacto&url=https://twitter.com/chasnami_&hashtags=chasnami"><i class="fab fa-twitter"></i></a>
-                </div>
+                </nav>
             </div>
         </section>
     </header>
     <main>
-        <section class="header_nombre">
+        <section class="informacion_general">
             <div class="foto">
                 <img class="redonda" src="assets/img/foto-perfil-2.jpeg" alt="Foto de perfil de Yasmani Viñamagua">
             </div>
@@ -40,20 +41,24 @@
                 <a href="https://www.instagram.com/chasnami_/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/yasmani08" target="_blank"><i class="fab fa-github-square"></i></a>
                 <a href="https://www.facebook.com/yasmanivinamagua" target="_blank"><i class="fab fa-facebook-square"></i></a>
-
             </div>
             <div class="tags">
                 <h5>👨🏻‍💻 Programar | Diseñar | Innovar</h5>
                 <h5>🚶🏻‍♂️ Economía | Política | Cocina | Música</h5>
                 <h5>📍 Loja, Ecuador</h5>
             </div>
-        </section>
-        <section class="information">
-            <div class="description">
-
-                <button id="boton"><i class="fas fa-graduation-cap"></i> 
+            <div class="botones">
+                <button class="boton active" onclick="abrirTab(event, 'Uno')"><i class="fas fa-graduation-cap"></i> 
                         <br>STUDIES</button>
-                <div class="contenido">
+
+                <button class="boton" onclick="abrirTab(event, 'Dos')"><i class="fas fa-heart"></i> 
+                        <br>PASSION</button>
+
+                <button class="boton" onclick="abrirTab(event, 'Tres')"><i class="fas fa-mug-hot"></i> 
+                        <br>HOBBIES</button>
+            </div>
+            <div class="contenido_botones">
+                <div class="contenido" id="Uno">
                     <p class="about"><img src="assets/img/school.jpeg" alt="Foto de grado de Yasmani Viñamagua">Actualmente me encuentro estudiando desarrollo web y mobile para posterior, enfocarlo en un proyecto personal que beneficiará a miles de comerciantes ecuatorianos
                         y los dará a conocer en todo el mundo 🌎.<br> Me apasiona innovar, aprender como funciona algo y volverlo más eficiente, que sea autónomo y en general que facilite la vida a las personas 🙋‍♂️. <br> El descubrir como mejorar algo
                         mediante el uso del internet, software y hardware (IoT) 💻 tiene el mismo efecto en mi que el café en algunas personas. Puedo trasnochar y seguir con mucha energía pues es algo que en verdad me apasiona.<br> 🎓 Para mis docentes
@@ -62,68 +67,31 @@
                         redes. Finalmente para mi trabajo de titulación, quise mejorar mi ciudad y desarrolle una propuesta de automatización del Sistema Municipal de Estacionamiento Rotativo Tarifado utilizando LoRaWAN. <br>
                     </p>
                 </div>
-
-
-                <button id="boton2"><i class="fas fa-heart"></i> 
-                        <br>PASSION</button>
-                <div class="contenido2">
+                <div class="contenido" id="Dos">
                     <p class="passion"><img src="assets/img/passion.jpg" alt="Foto cocncurso de innovación utpl">👉 Programador de nacimiento, creyente de que el mundo dio un enorme paso hacia la digitalización (e-commerce, cripto-moneda, home office...). Aprendo a desarrollar
                         software ya sean apps, webs o controladores de equipos 👩‍💻. Manejo c++, flutter, php, python, css, Matlab, java, WordPress, ATMEL Studio, LabVIEW y más, siempre en busca de poder automatizar lo que necesites en tu compañía, empresa
                         o startup. Y deseoso de compartir mis conocimientos.
                         <br> 👉 Dado que siempre me ha gustado el imaginar y llevar a cabo proyectos, he participado en algunos concurso de innovación siendo finalista en "Imagina Banco del Pacífico" y ganador junto a mi team, en un reto de innovación
                         de la UTPL. <br> 👉 Diseñador empírico con la capacidad de diseñar una línea gráfica para web, app, e-commerce, e-mail marketing y marca personal. Me pongo en el lugar del público objetivo, satisfaciendo sus necesidades y solucionando
-                        sus problemas.
+                        sus problemas.</p>
                 </div>
-
-
-                <button id="boton3"><i class="fas fa-mug-hot"></i> 
-                        <br>HOBBIES</button>
-                <div class="contenido3">
+                <div class="contenido" id="Tres">
                     <p class="hobbies"> <img src="assets/img/hobbie.JPG" alt="Foto cocncurso de innovación utpl">👉 No puedo dejar de lado mis pasatiempos favoritos como la música, cocina, economía y política ☕️📰, aunque eso lo dejo para mi tiempo libre y Twitter
                         <a class="twiter" href="https://twitter.com/chasnami_" target="_blank"><i class="fab fa-twitter"></i></a>.
                     </p>
                 </div>
-
             </div>
+        </section>
+    </main>
+    <script src="js/button.js"></script>
+    <footer>
+        <section class="information">
             <div class="contact">
                 <p class="mail">Mail: ayvinamagua@utpl.edu.ec</p>
                 <p class="direction">Direction: Loja, Loja, Ecuador</p>
             </div>
         </section>
-    </main>
-    <script type="text/javascript">
-        let boton = document.getElementById('boton');
-        let contenido = document.querySelector('.contenido');
-        boton.addEventListener('click', () => {
-            if (contenido.style.display === "") {
-                contenido.style.display = "block";
-            } else {
-                contenido.style.display = "";
-            }
-        })
-    </script>
-    <script type="text/javascript">
-        let boton2 = document.getElementById('boton2');
-        let contenido2 = document.querySelector('.contenido2');
-        boton2.addEventListener('click', () => {
-            if (contenido2.style.display === "") {
-                contenido2.style.display = "block";
-            } else {
-                contenido2.style.display = "";
-            }
-        })
-    </script>
-    <script type="text/javascript">
-        let boton3 = document.getElementById('boton3');
-        let contenido3 = document.querySelector('.contenido3');
-        boton3.addEventListener('click', () => {
-            if (contenido3.style.display === "") {
-                contenido3.style.display = "block";
-            } else {
-                contenido3.style.display = "";
-            }
-        })
-    </script>
+    </footer>
 </body>
 
 </html>
