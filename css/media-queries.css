@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
     header {
         /*largo*/
-        width: 150%;
+        width: 100%;
     }
     main {
         margin: -65px 10px 0px 10px;
